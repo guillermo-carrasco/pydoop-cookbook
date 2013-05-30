@@ -3,7 +3,7 @@
 # Recipe:: latest_code
 #
 
-#include_recipe "hadoop"
+include_recipe "hadoop"
 include_recipe "pydoop-cookbook::install_deps"
 
 #Checkot pydoop from Git
