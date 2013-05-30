@@ -2,7 +2,11 @@
 # Cookbook Name:: pydoop-cookbook
 # Recipe:: default
 #
-# Copyright 2013, YOUR_COMPANY_NAME
 #
-# All rights reserved - Do Not Redistribute
-#
+
+include_recipe "pydoop-cookbook::install_deps"
+
+execute "Installing pydoop from repositories using pip..." do
+    command "pip install pydoop"
+    action :run
+end
