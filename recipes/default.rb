@@ -4,6 +4,7 @@
 #
 #
 
+include_recipe "hadoop"
 include_recipe "pydoop-cookbook::install_deps"
 
 execute "Installing pydoop from repositories using pip..." do
